@@ -43,7 +43,7 @@ public class SortArray {
         });
     }
 
-    // 使用 java 8 排序
+    // 使用 java 8 (jdk1.8)排序
     private void sortUsingJava8(List<String> names){
         Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
     }
