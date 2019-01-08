@@ -14,5 +14,14 @@ public class GetIp {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
+        try {
+            InetAddress addr = InetAddress.getLocalHost();
+            System.out.println("Local HostAddress:"+addr.getHostAddress());
+                            String hostname = addr.getHostName();
+            System.out.println("Local host name: "+hostname);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+
     }
 }
